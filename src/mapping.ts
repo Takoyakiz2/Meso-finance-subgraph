@@ -1,5 +1,5 @@
 import { BigDecimal, BigInt } from '@graphprotocol/graph-ts';
-import { QiStablecoin, CreateVault, DestroyVault, TransferVault, DepositCollateral, WithdrawCollateral, BorrowToken, PayBackToken, BuyRiskyVault } from '../generated/QiStablecoin/QiStablecoin'
+import { QiStablecoin, CreateVault, DestroyVault, TransferVault, DepositCollateral, WithdrawCollateral, BorrowToken, PayBackToken, BuyRiskyVault } from '../generated/MapleDollar/MapleDollar'
 import { calculateProtocolCollateralRatio, calculateVaultCollateRatio } from './ratios';
 import { loadAccount, loadLiquidation, loadProtocol, loadVault } from './utils'
 
