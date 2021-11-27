@@ -5,21 +5,21 @@ schema:
   file: ./schema.graphql
 dataSources:
   - kind: ethereum/contract
-    name: QiStablecoin
-    network: matic
+    name: MapleDollar
+    network: fantom
     source:
-      address: '0xa3Fa99A148fA48D14Ed51d610c367C61876997F1'
-      abi: QiStablecoin
+      address: '0xBA824D6A953EA80cDED41d6C01D82BF485b302Ae'
+      abi: MapleDollar
       startBlock: 13976458
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.4
       language: wasm/assemblyscript
       entities:
-        - QiStablecoin
+        - MapleDollar
       abis:
-        - name: QiStablecoin
-          file: ./abis/QiStablecoin.json
+        - name: MapleDollar
+          file: ./abis/MapleDollar.json
       eventHandlers:
         - event: CreateVault(uint256,address)
           handler: handleCreateVault
